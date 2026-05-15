@@ -4,7 +4,7 @@ import Payslips from "./pages/Payslips";
 import Settings from "./pages/Settings";
 import Dashboard from "./pages/Dashboard";
 import Attendance from "./pages/Attendance";
-import Employee from "./pages/Employee";
+import Employees from "./pages/Employees";
 import Leave from "./pages/Leave";
 import PrintPayslip from "./pages/PrintPayslip";
 import LoginLanding from "./pages/LoginLanding";
@@ -20,7 +20,7 @@ const App = () => {
         <Route path="/login/employee" element={<LoginForm role="employee" title="Employee Portal" subtitle="Sign in to access your account"/>}/>
         <Route element = {<Layout/>}>
           <Route path = "/dashboard" element = {<Dashboard/>}/>
-          <Route path = "/employees" element = {<Employee/>}/>
+          <Route path = "/employees" element = {<Employees/>}/>
           <Route path = "/attendance" element = {<Attendance/>}/>
           <Route path = "/leave" element={<Leave/>}/>
           <Route path = "/payslips" element={<Payslips/>}/>

@@ -22,7 +22,7 @@ function Sidebar() {
         setUserName(dummyProfileData.firstName + ' ' + dummyProfileData.lastName)
     }, [])
 
-    const role = "" || "EMPLOYEE"
+    const role = "ADMIN" || "EMPLOYEE"
     const navItems = [
         {name: "Dashboard", path: "/dashboard", icon:LayoutGridIcon},
         role === "ADMIN" ?
